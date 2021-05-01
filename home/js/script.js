@@ -1,8 +1,8 @@
-let body = document.querySelector(".body");
-let changeContent = document.querySelector(".js-changeContentButton");
-let realizations = document.querySelector(".js-realizations");
-let showContent = document.querySelector(".js-showContentButton");
-let textButton = document.querySelector(".js-textButton");
+const body = document.querySelector(".body");
+const changeContent = document.querySelector(".js-changeContentButton");
+const realizations = document.querySelector(".js-realizations");
+const showContent = document.querySelector(".js-showContentButton");
+const textButton = document.querySelector(".js-textButton");
 
 changeContent.addEventListener("click", () => {
     body.classList.toggle("secondBackground");
