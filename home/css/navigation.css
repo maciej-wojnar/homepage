@@ -1,6 +1,4 @@
 .navigation {
-    margin: auto;
-    margin-top: 20px;
     background-color: #00000093;
     border-radius: 15%;
     border: 3px solid #242323;
@@ -14,6 +12,8 @@
 }
 
 .navigation__list {
+    display: flex;
+    flex-direction: row-reverse;
     list-style-type: none;
     padding-left: 5;
 }
