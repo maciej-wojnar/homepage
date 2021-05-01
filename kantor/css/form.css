@@ -1,0 +1,55 @@
+.form {
+    color: white;
+    font-family: 'Lato' sans-serif;
+    color: #c5c8c8e5;
+    border: 5px solid #aaaaaa;
+    background-color: rgba(0, 0, 0, 0.850);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.form__fieldset {
+    font-size: 20px;
+    color: #a0bcf7;
+    border: 2px solid #aaaaaa;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.650);
+}
+
+.form__value {
+    background-color: #ffffffd2;
+    margin: 10px auto;
+    border-radius: 15%;
+    width: 260px;
+    border: 5px solid #535353;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.form__button {
+    color: white;
+    background-color: #00000093;
+    margin: 10px auto;
+    border-radius: 15px;
+    width: 260px;
+    border: 2px solid #535353;
+    display: block;
+    text-decoration: none;
+    color: #a0bcf7;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.form__button:hover {
+    opacity: 1;
+    background-color: #00000093;
+    color: #0e93ecfa;
+}
+
+.form__button:active {
+    color: #33ec0efa;
+}

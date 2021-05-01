@@ -1,0 +1,30 @@
+.table {
+    font-family: "Lato", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table__cell {
+    border: 2px solid #242323;
+    padding: 20px;
+    text-align: center;
+}
+
+.table__cell--header {
+    background-color: #021929fa;
+    border: 2px solid #242323;
+    color: white;
+    font-weight: normal;
+}
+
+.table__row:nth-child(even) {
+    background-color: #2e2d2d;
+}
+
+.table__row:hover {
+    background: #053657;
+}
+
+.table__cell--header:hover {
+    background-color: rgb(5, 54, 55);
+}

@@ -1,0 +1,23 @@
+.button {
+    color: white;
+    background-color: #00000093;
+    margin: 10px auto;
+    border-radius: 15%;
+    width: 260px;
+    border: 3px solid #242323;
+    display: block;
+    text-decoration: none;
+    color: #a0bcf7;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.button:hover {
+    opacity: 1;
+    background-color: #00000093;
+    color: #0e93ecfa;
+}
+
+.button:active {
+    color: #33ec0efa;
+}

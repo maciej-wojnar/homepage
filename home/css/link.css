@@ -1,0 +1,14 @@
+.link {
+    text-decoration: none;
+    color: #a0bcf7;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.link:hover {
+    color: #0e93ecfa;
+}
+
+.link:active {
+    color: #33ec0efa;
+}

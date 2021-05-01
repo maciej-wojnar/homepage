@@ -1,0 +1,38 @@
+.navigation {
+    margin: auto;
+    margin-top: 20px;
+    background-color: #00000093;
+    border-radius: 15%;
+    border: 3px solid #242323;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navigation:hover {
+    opacity: 1;
+    background-color: #00000093;
+}
+
+.navigation__list {
+    list-style-type: none;
+    padding-left: 5;
+}
+
+.navigation__listItem {
+    padding: 5px;
+}
+
+.navigation__linkItem {
+    text-decoration: none;
+    color: #a0bcf7;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.navigation__linkItem:hover {
+    color: #0e93ecfa;
+}
+
+.navigation__linkItem:active {
+    color: #33ec0efa;
+}

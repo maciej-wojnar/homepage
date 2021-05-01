@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maciej Wojnar - o sobie</title>
+    <link href="css/globalStyle.css" rel="stylesheet">
+    <link href="css/box.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/button.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/image.css" rel="stylesheet">
+    <link href="css/link.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body class="body">
+    <header class="mainHeader" id="naglowek">
+        <h1>Cześć!<br> Nazywam się Maciej Wojnar</h1>
+        <img class="image" src="images/MWojnar.jpg" alt="Maciej Wojnar">
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__listItem"><a class="navigation__linkItem" href="#o-mnie">O mnie</a></li>
+                <li class="navigation__listItem"><a class="navigation__linkItem" href="#hobby">Hobby</a></li>
+                <li class="navigation__listItem"><a class="navigation__linkItem" href="#biegi-gorskie">Biegi górskie</a>
+                </li>
+                <li class="navigation__listItem"><a class="navigation__linkItem" href="#realizacje">Realizacje</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button class="button js-changeContentButton">Zmień tapetę</button>
+    <main class="box" id="o-mnie">
+        <h2>Kilka słów o mnie</h2>
+
+        <p>Z wykształcenia Technik Informatyk. Prywatnie mąż i ojciec trójki dzieci.
+            Zawodowo operator CNC.</p>
+        <p>Na codzień, w życiu, staram się kierować poniższym kluczem:</p>
+        <a class="link" href="https://youtu.be/DqmRVJ-zhIQ" target="_blank"><em>Will Smith - Key to life</em></a>
+        <section id="hobby">
+            <h2>Hobby i pasje</h2>
+            <p>Moją pasją jest szeroko rozumiana elektronika i informatyka, od hardware po software.
+                Lubię naprawiać uszkodzone lub nie działające sprzęty, czy to telefony, laptopy czy też komputery
+                stacjonarne.
+                Ogólnie nie straszna mi wymiana zbitego ekranu, gniazda czy tym podobne. Lubię też rozwiązywać problemy
+                softwareowe.</p>
+            <p>Poza informatyką uwielbiam jazdę na rowerze i kocham bieganie, zwłaszcza długie treningi w górach.</p>
+            <p>Jeśli chodzi o rower to nie umiał bym zdecydować MTB czy szosa dlatego jeden i drugi jest niezbędny.<br>
+                "Życie jest zbyt krótkie by jeździć na jednym rowerze" ;)
+                Lubię całodniowe wyprawy i szybkie mocne jednostki treningowe.
+            </p>
+            <p>Co do biegania, aktualnie wpadła mi kilkumiesięczna przerwa spowodowana nakładającymi się kwestiami
+                rodzinnymi i zawodowymi, ale marzenie o przekroczeniu granicy i przebiegnięciu 100km, ciągle pozostaje
+                do
+                zrealizowania jako
+                plan na 2021r.
+            </p>
+            <p>Tworzenie stron daje dużo radości. Mam na swoim koncie stworzenie kilku stron i sklepów internetowych na
+                bazie CMS-ów, i to właśnie pewne ograniczenia w tychże CMS-ach, typu Wordpress czy Drupal pchnęło mnie
+                do
+                próby zgłębienia tajników programowania, by móc zmienić elementy, które z założenia autora motywu nie
+                były
+                edytowalne.</p>
+            <p>JS wydaje się być jednak lepszym rozwiązaniem, gdyż strona może być stworzona przy znacznie mniejszej
+                ilości
+                kodu,
+                czego przy systemach CMS nie da się uniknąć. W połączeniu HTML CSS i JS głównym ograniczeniem wydaje się
+                być
+                już
+                tylko wyobraźnia. Mam więc nadzieje, że za dwadzieścia tygodni wiedza z zakresu JavaScript pozwoli
+                swobodnie
+                tworzyć
+                własne projekty w znacznie wygodniejszy sposób.
+            </p>
+        </section>
+    </main>
+    <div class="box" id="biegi-gorskie">
+        <table class="table">
+            <caption>Biegi ultra w okresie wakacyjnym</caption>
+            <tr class="table__row">
+                <th class="table__cell--header" scope="col">Nazwa</th>
+                <th class="table__cell--header" scope="col">Dystans</th>
+                <th class="table__cell--header" scope="col">Miejsce</th>
+                <th class="table__cell--header" scope="col">Miesiąc</th>
+            </tr>
+            <tr class="table__row">
+                <th class="table__cell--header" scope="row">"Maraton Karkonoski"</th>
+                <td class="table__cell">47km</td>
+                <td class="table__cell">Szklarska Poręba</td>
+                <td class="table__cell">Lipiec</td>
+            </tr>
+            <tr class="table__row">
+                <th class="table__cell--header" scope="row">Gala Biegów Ultra</th>
+                <td class="table__cell">12h / 6h</td>
+                <td class="table__cell">Kraków</td>
+                <td class="table__cell">Lipiec</td>
+            </tr>
+            <tr class="table__row">
+                <th class="table__cell--header" scope="row">Dolnośląski Festiwal Biegów Górskich</th>
+                <td class="table__cell">60/110/130/240km</td>
+                <td class="table__cell">Kotlina Kłodzka</td>
+                <td class="table__cell">Lipiec</td>
+            </tr>
+            <tr class="table__row">
+                <th class="table__cell--header" scope="row">Ultra Sowa</th>
+                <td class="table__cell">53km</td>
+                <td class="table__cell">Bielawa</td>
+                <td class="table__cell">Lipiec</td>
+            </tr>
+            <tr class="table__row">
+                <th class="table__cell--header" scope="row">Ultra Trail Granicy Warmii i Mazur</th>
+                <td class="table__cell">50km</td>
+                <td class="table__cell">Swaderki</td>
+                <td class="table__cell">Lipiec</td>
+            </tr>
+            <tr class="table__row">
+                <th class="table__cell--header" scope="row">Gorce Ultra Trail</th>
+                <td class="table__cell">48/84/102km</td>
+                <td class="table__cell">Ochotnica</td>
+                <td class="table__cell">Sierpień</td>
+            </tr>
+            <tr class="table__row">
+                <th class="table__cell--header" scope="row">Bieg Szlak Trafi</th>
+                <td class="table__cell">60</td>
+                <td class="table__cell">Kazimierz nad Wisłą</td>
+                <td class="table__cell">Sierpień</td>
+            </tr>
+            <tr class="table__row">
+                <th class="table__cell--header" scope="row">Chudy Wawrzyniec</th>
+                <td class="table__cell">50/80/100km</td>
+                <td class="table__cell">Beskid Żywiecki</td>
+                <td class="table__cell">Sierpień</td>
+            </tr>
+            <tr class="table__row">
+                <th class="table__cell--header" scope="row">Ultramaraton Magurski</th>
+                <td class="table__cell">70/100km</td>
+                <td class="table__cell">Krempna</td>
+                <td class="table__cell">Sierpień</td>
+            </tr>
+            <tr class="table__row">
+                <th class="table__cell--header" scope="row">Ultramaraton Powstańca</th>
+                <td class="table__cell">63km</td>
+                <td class="table__cell">Wieliszew</td>
+                <td class="table__cell">Sierpień</td>
+            </tr>
+            <tr class="table__row">
+                <th class="table__cell--header" scope="row">Bieg Granią Tatr</th>
+                <td class="table__cell">70</td>
+                <td class="table__cell">Zakopane</td>
+                <td class="table__cell">Sierpień</td>
+            </tr>
+            <tr class="table__row">
+                <th class="table__cell--header" scope="row">Ultra Kamieńsk</th>
+                <td class="table__cell">65km</td>
+                <td class="table__cell">Kamieńsk</td>
+                <td class="table__cell">Sierpień</td>
+            </tr>
+        </table>
+    </div>
+
+    <section class="box" id="realizacje">
+        <h3>Realizacje</h3>
+        <p>Tworzenie stron daje dużo radości. Mam na swoim koncie stworzenie kilku stron i sklepów internetowych na
+            bazie CMS-ów, i to właśnie pewne ograniczenia w tychże CMS-ach, typu Wordpress czy Drupal pchnęło mnie do
+            próby zgłębienia tajników programowania, by móc zmienić elementy, które z założenia autora motywu nie były
+            edytowalne.</p>
+        <p>JS wydaje się być jednak lepszym rozwiązaniem, gdyż strona może być stworzona przy znacznie mniejszej ilości
+            kodu,
+            czego przy systemach CMS nie da się uniknąć. W połączeniu HTML CSS i JS głównym ograniczeniem wydaje się być
+            już
+            tylko wyobraźnia. Mam więc nadzieje, że za dwadzieścia tygodni wiedza z zakresu JavaScript pozwoli swobodnie
+            tworzyć
+            własne projekty w znacznie wygodniejszy sposób.
+        </p>
+        <button class="button js-showContentButton"><span class="js-textButton">Ukryj</span> realizacje</button>
+    </section>
+    <section class="box js-realizations">
+        <h3>Strona i sklep internetowy w trakcie realizacji:</h3>
+        <img class="image" src="images/Forever 1.png" alt="Strony Forever">
+        <img class="image" src="images/Kajatrans.png" alt="Strona Kajatrans">
+        <img class="image" src="images/Forever2.png" alt="Strona Forever">
+    </section>
+    <footer>
+        <nav class="navigation">
+            <a class="link" href="#naglowek">Wróć na górę</a>
+        </nav>
+        <p>Wykonano przez: Maciej Wojnar</p>
+    </footer>
+</body>
+
+</html>

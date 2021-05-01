@@ -1,0 +1,24 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    max-width: 1000px;
+    background-image: url("https://iv.pl/images/b32c6bec72e5fa355db645805b2f8852.jpg");
+    background-size: cover;
+    margin: auto;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: #a0bcf7;
+    font-weight: 500;
+}
+
+.header {
+    color: #a0bcf7;
+}
