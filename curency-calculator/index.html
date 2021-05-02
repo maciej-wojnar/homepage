@@ -18,61 +18,59 @@
 </head>
 
 <body class="body">
-        <form class="form js-form">
-            <h1 class="form__header">Kantor wymiany walut</h1>
-            <fieldset class="form__fieldset">
-                <legend class="form__legend">Przelicznik walut</legend>
-                <p class="form__paragraph">
-                    <label>
-                        <span class="form__labelText">Kwota w PLN*: </span>
-                        <input class="form__field js-amountPln" required type="number" min="0" step="any">
-                    </label>
-                </p>
-
-                <p class="form__paragraph">
-                    <label>
-                        <span class="form__labelText">Wybrana waluta:</span>
-                        <select name="wybranyKurs" class="form__field js-selectedCurrency">
-                            <option value="EUR">EUR</option>
-                            <option value="USD">USD</option>
-                            <option value="GBP">GBP</option>
-                        </select>
-                    </label>
-                </p>
-            </fieldset>
+    <form class="form js-form">
+        <h1 class="form__header">Kantor wymiany walut</h1>
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">Przelicznik walut</legend>
             <p class="form__paragraph">
-                <button class="form__button">Przelicz</button>
-                <button class="form__button js-reset" type="reset">Wyczyść formularz</button>
+                <label>
+                    <span class="form__labelText">Kwota w PLN*: </span>
+                    <input class="form__field js-amountPln" required type="number" min="0" step="any">
+                </label>
             </p>
-            <p class="form__paragraph">Twoja kwota po przeliczeniu wynosi: <strong class="form__result js-exchange">N/A</strong></p>
-        </form>
+
+            <p class="form__paragraph">
+                <label>
+                    <span class="form__labelText">Wybrana waluta:</span>
+                    <select name="wybranyKurs" class="form__field js-selectedCurrency">
+                        <option value="EUR">EUR</option>
+                        <option value="USD">USD</option>
+                        <option value="GBP">GBP</option>
+                    </select>
+                </label>
+            </p>
+        </fieldset>
+        <p class="form__paragraph">
+            <button class="form__button">Przelicz</button>
+            <button class="form__button js-reset" type="reset">Wyczyść formularz</button>
+        </p>
+        <p class="form__paragraph">Twoja kwota po przeliczeniu wynosi: <strong
+                class="form__result js-exchange">N/A</strong></p>
+    </form>
 
     <button class="form__button js-showContentButton"><span class="js-textButton">Pokaż</span> kursy walut</button>
-    </section>
     <section class="form__exchangeRate hidden js-exchangeRate">
-            
-            <form class="form js-form">
-                <h3>Kursy sprzedaży:</h3>
-                </p>
-            
-                    <label class="form__rate">
-                        <span class="form__labelText">EUR: </span>
-                        <input class="form__field js-rateEur" type="number" min="0.1" step="0.01" value="4.61">
-                    </label>
-                
-               
-                    <label class="form__rate">
-                        <span class="form__labelText">USD: </span>
-                        <input class="form__field js-rateUsd" type="number" min="0.1" step="0.01" value="3.81">
-                    </label>
-              
-                    <label class="form__rate">
-                        <span class="form__labelText">GBP: </span>
-                        <input class="form__field js-rateGbp" type="number" min="0.1" step="0.01" value="5.31">
-                    </label>
-               
-                <button class="form__button js-reset" type="reset">Przywróć domyślne</button>
-            </form>
+
+        <form class="form js-form">
+            <h3>Kursy sprzedaży:</h3>
+            <label class="form__rate">
+                <span class="form__labelText">EUR: </span>
+                <input class="form__field js-rateEur" type="number" min="0.1" step="0.01" value="4.61">
+            </label>
+
+
+            <label class="form__rate">
+                <span class="form__labelText">USD: </span>
+                <input class="form__field js-rateUsd" type="number" min="0.1" step="0.01" value="3.81">
+            </label>
+
+            <label class="form__rate">
+                <span class="form__labelText">GBP: </span>
+                <input class="form__field js-rateGbp" type="number" min="0.1" step="0.01" value="5.31">
+            </label>
+
+            <button class="form__button js-reset" type="reset">Przywróć domyślne</button>
+        </form>
     </section>
 </body>
 
