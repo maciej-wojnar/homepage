@@ -1,5 +1,4 @@
 .form {
-    color: white;
     font-family: 'Lato' sans-serif;
     color: #c5c8c8e5;
     border: 2px solid #aaaaaa;
@@ -9,11 +8,14 @@
 }
 
 .form__paragraph {
+    margin: 5px;
     font-size: 20px;
     color: #c5c8c8e5;
 }
 
 .form__fieldset {
+    display: flex;
+    flex-direction: column;
     color: #a0bcf7;
     border: 2px solid #aaaaaa;
     border-radius: 15px;
@@ -56,18 +58,16 @@
 }
 
 .form__rate {
-    margin: 5px;
-    padding: 5px;
-    color: white;
-    font-family: 'Lato' sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     color: #c5c8c8e5;
-    border: 2px solid #aaaaaa;
-    border-radius: 10px;
-    text-align: center;
+    background-color: rgba(0, 0, 0, 0.850);
 }
 
 .form__result {
-    padding: 10px;
+    padding: 2px;
     font-size: 25px;
     color: #0e93ecfa;
     border: 2px solid #aaaaaa;
