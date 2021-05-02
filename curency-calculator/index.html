@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kantor-MaciekWoo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/globalStyle.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/link.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body class="body">
+        <form class="form js-form">
+            <h1 class="form__header">Kantor wymiany walut</h1>
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Przelicznik walut</legend>
+                <p class="form__paragraph">
+                    <label>
+                        <span class="form__labelText">Kwota w PLN*: </span>
+                        <input class="form__field js-amountPln" required type="number" min="0" step="any">
+                    </label>
+                </p>
+
+                <p class="form__paragraph">
+                    <label>
+                        <span class="form__labelText">Wybrana waluta:</span>
+                        <select name="wybranyKurs" class="form__field js-selectedCurrency">
+                            <option value="EUR">EUR</option>
+                            <option value="USD">USD</option>
+                            <option value="GBP">GBP</option>
+                        </select>
+                    </label>
+                </p>
+            </fieldset>
+            <p class="form__paragraph">
+                <button class="form__button">Przelicz</button>
+                <button class="form__button js-reset" type="reset">Wyczyść formularz</button>
+            </p>
+            <p class="form__paragraph">Twoja kwota po przeliczeniu wynosi: <strong class="form__result js-exchange">N/A</strong></p>
+        </form>
+
+    <button class="form__button js-showContentButton"><span class="js-textButton">Pokaż</span> kursy walut</button>
+    </section>
+    <section class="form__exchangeRate hidden js-exchangeRate">
+            
+            <form class="form js-form">
+                <h3>Kursy sprzedaży:</h3>
+                </p>
+            
+                    <label class="form__rate">
+                        <span class="form__labelText">EUR: </span>
+                        <input class="form__field js-rateEur" type="number" min="0.1" step="0.01" value="4.61">
+                    </label>
+                
+               
+                    <label class="form__rate">
+                        <span class="form__labelText">USD: </span>
+                        <input class="form__field js-rateUsd" type="number" min="0.1" step="0.01" value="3.81">
+                    </label>
+              
+                    <label class="form__rate">
+                        <span class="form__labelText">GBP: </span>
+                        <input class="form__field js-rateGbp" type="number" min="0.1" step="0.01" value="5.31">
+                    </label>
+               
+                <button class="form__button js-reset" type="reset">Przywróć domyślne</button>
+            </form>
+    </section>
+</body>
+
+</html>

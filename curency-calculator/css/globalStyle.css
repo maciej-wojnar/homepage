@@ -9,11 +9,10 @@ html {
 
 .body {
     max-width: 1000px;
-    background-image: url("https://iv.pl/images/b32c6bec72e5fa355db645805b2f8852.jpg");
-    background-size: cover;
-    margin: auto;
+    margin:auto;
     padding: 10px;
-    text-decoration: none;
+    background-image: url("https://iv.pl/images/b32c6bec72e5fa355db645805b2f8852.jpg");
+    background-size: contain;
     text-align: center;
     color: #a0bcf7;
     font-weight: 500;
