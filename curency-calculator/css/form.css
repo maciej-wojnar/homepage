@@ -8,6 +8,9 @@
 }
 
 .form__paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 5px;
     font-size: 20px;
     color: #c5c8c8e5;
