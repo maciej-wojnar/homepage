@@ -4,33 +4,34 @@
   formElement.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const rateEurElement = document.querySelector(".js-rateEur");
-    const rateUsdElement = document.querySelector(".js-rateUsd");
-    const rateGbpElement = document.querySelector(".js-rateGbp");
-    const exchangeElement = document.querySelector(".js-exchange");
+    
+      const amountPlnElement = document.querySelector(".js-amountPln");
+      const selectedCurrencyElement = document.querySelector(".js-selectedCurrency");
 
-    const amountPlnElement = document.querySelector(".js-amountPln");
-    const selectedCurrencyElement = document.querySelector(".js-selectedCurrency");
-
-    const calculateExchange = (amountPln, selectedCurrency) => {
-      const rateEur = rateEurElement.value;
-      const rateUsd = rateUsdElement.value;
-      const rateGbp = rateGbpElement.value;
-      switch (selectedCurrency) {
-        case "EUR":
-          return amountPln / rateEur;
-        case "USD":
-          return amountPln / rateUsd;
-        case "GBP":
-          return amountPln / rateGbp;
+      const rateEurElement = document.querySelector(".js-rateEur");
+      const rateUsdElement = document.querySelector(".js-rateUsd");
+      const rateGbpElement = document.querySelector(".js-rateGbp");
+      const exchangeElement = document.querySelector(".js-exchange");
+{
+      const calculateExchange = (amount, currency) => {
+        const rateEur = rateEurElement.value;
+        const rateUsd = rateUsdElement.value;
+        const rateGbp = rateGbpElement.value;
+        switch (currency) {
+          case "EUR":
+            return amount / rateEur;
+          case "USD":
+            return amount / rateUsd;
+          case "GBP":
+            return amount / rateGbp;
+        }
       }
-    }
-    const amountPln = amountPlnElement.value;
-    const selectedCurrency = selectedCurrencyElement.value;
+      const amount = amountPlnElement.value;
+      const currency = selectedCurrencyElement.value;
 
-    const exchange = calculateExchange(amountPln, selectedCurrency)
-    exchangeElement.innerText = `${exchange.toFixed(2)} ${selectedCurrency}`;
-
+      const exchange = calculateExchange(amount, currency)
+      exchangeElement.innerText = `${exchange.toFixed(2)} ${currency}`;
+  }
   });
 
   const showRateTable = () => {
