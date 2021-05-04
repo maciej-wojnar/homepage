@@ -1,4 +1,4 @@
-{
+{// moduł 6.7 13:45
     const tasks = [
         {
             content: "wstać",
@@ -9,8 +9,21 @@
             done: true,
 
         },
-
     ];
+
+    const addNewTask = (newTaskContent) => {
+        tasks.push({
+            content: newTaskContent,
+        });
+
+        render();
+    };
+
+    const removeTask =(taskIndex) => {
+        tasks.splice(index, 1);
+                render();
+    }
+
 
     const render = () => {
         let htmlString = "";
@@ -20,24 +33,26 @@
               <li
               ${task.done ? " style=\"text-decoration: line-through\"" : ""}
               >
+              <button class="js-remove">usuń</button>
+              
               ${task.content}
               </li>
             `;
         }
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
-    };
 
-    const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
+        const removeButtons = document.querySelectorAll(".js-remove");
+
+        removeButtons.forEach((removeButton, index) => {
+            removeButton.addEventListener("click", () => {
+                removeTask(index);
+            });
         });
-
-
-        render();
     };
 
-    const onFormSubmit =  (event) => {
+    
+    const onFormSubmit = (event) => {
         event.preventDefault();
 
         const newTaskContent = document.querySelector(".js-newTask").value.trim();
@@ -46,7 +61,7 @@
             return;
         }
 
-      addNewTask(newTaskContent);
+        addNewTask(newTaskContent);
     };
 
     const init = () => {
