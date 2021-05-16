@@ -1,14 +1,6 @@
-{// moduł 6.7 18:40
+{
     const tasks = [
-        {
-            content: "wstać",
-            done: false,
-        },
-        {
-            content: "zjeść śniadanie",
-            done: true,
 
-        },
     ];
 
     const addNewTask = (newTaskContent) => {
@@ -21,15 +13,27 @@
 
     const removeTask = (taskIndex) => {
         tasks.splice(taskIndex, 1);
-                render();
-    }
+        render();
+    };
 
     const toggleTaskDone = (taskIndex) => {
         tasks[taskIndex].done = !tasks[taskIndex].done;
         render();
-    }
+    };
 
-    const bindEvents = () => {
+    const toggleTaskContentDone = (taskContent, taskIndex) => {
+        if (tasks[taskIndex].done) {
+            taskContent.classList.add("taskList__span--done");
+        }
+    };
+
+    const toggleTaskButtonTextDone = (taskButtonText, taskIndex) => {
+        if (tasks[taskIndex].done) {
+            taskButtonText.classList.add("taskList__buttonSpan--done");
+        }
+    };
+
+    const bindButtonEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
         removeButtons.forEach((removeButton, index) => {
@@ -42,52 +46,66 @@
 
         toggleDoneButtons.forEach((toggleDoneButton, index) => {
             toggleDoneButton.addEventListener("click", () => {
-               toggleTaskDone(index);
+                toggleTaskDone(index);
             });
         });
-    }
+    };
+
+    const bindTaskEvents = () => {
+        const taskContents = document.querySelectorAll(".js-taskContent");
+
+        taskContents.forEach((taskContent, index) => {
+            toggleTaskContentDone(taskContent, index);
+        });
+
+        const taskButtonTexts = document.querySelectorAll(".js-taskButtonText");
+
+        taskButtonTexts.forEach((taskButtonText, index) => {
+            toggleTaskButtonTextDone(taskButtonText, index);
+        });
+    };
 
     const render = () => {
         let htmlString = "";
-
         for (const task of tasks) {
             htmlString += `
-              <li
-              ${task.done ? " style=\"text-decoration: line-through\"" : ""}
-              >
-              <button class="js-done">zrobione?</button>
-              <button class="js-remove">usuń</button>
-              
-              ${task.content}
-              </li>
+            <li class="taskList__item">
+                <button class="taskList__button taskList__button--done js-done">
+                    <span class="taskList__buttonSpan js-taskButtonText">✔</span>
+                </button>
+                <span class="taskList__span js-taskContent">
+                    ${task.content}
+                </span>
+                <button class="taskList__button taskList__button--remove js-remove">
+                    🗑
+                </button>            
+            </li>
             `;
         }
-
         document.querySelector(".js-tasks").innerHTML = htmlString;
-
-        bindEvents ();
+        bindButtonEvents();
+        bindTaskEvents();
     };
 
-    
+    const clearInput = (newTask) => {
+        newTask.value = "";
+        newTask.focus();
+    }
+
     const onFormSubmit = (event) => {
         event.preventDefault();
-
-        const newTaskContent = document.querySelector(".js-newTask").value.trim();
-
-        if (newTaskContent === "") {
-            return;
+        const newTaskElement = document.querySelector(".js-newTask");
+        const newTaskContent = newTaskElement.value.trim();
+        clearInput(newTaskElement);
+        if (newTaskContent) {
+            addNewTask(newTaskContent);
         }
-
-        addNewTask(newTaskContent);
     };
 
     const init = () => {
         render();
-
         const form = document.querySelector(".js-form");
-
         form.addEventListener("submit", onFormSubmit);
     };
-
     init();
 }
