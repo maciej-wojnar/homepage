@@ -1,0 +1,58 @@
+.taskList {
+    list-style-type: none;
+    margin: 0 auto 20px;
+    padding: 40px 20px 20px;
+}
+
+.taskList__item {
+    padding: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 25px 1fr 25px;
+    align-items: center;
+    border-bottom: 2px solid #DFDFDF;
+}
+
+.taskList__span {
+    color: #333;
+    word-break: break-all;
+    font-size: 16px;
+    padding: 0 5px;
+}
+
+.taskList__span--done {
+    text-decoration: line-through;
+}
+
+.taskList__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.taskList__buttonSpan {
+    opacity: 0;
+}
+
+.taskList__buttonSpan--done {
+    opacity: 1;
+}
+
+.taskList__button:hover {
+    cursor: pointer;
+}
+
+.taskList__button:active {
+    outline: 1px solid black;
+}
+
+.taskList__button--done {
+    background-color: #1A7C1B;
+    color: white;
+}
+
+.taskList__button--remove {
+    background-color: #f0283e;
+    color: white;
+}
