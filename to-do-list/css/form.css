@@ -15,7 +15,7 @@
     flex-grow: 4;
     margin-right: 20px;
     padding: 10px;
-    border: 1px solid #dfdfdf;
+    border: 1px solid #cecece;
 }
 
 @media(max-width: 767px) {

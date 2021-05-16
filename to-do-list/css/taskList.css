@@ -25,10 +25,12 @@
 }
 
 .taskList__button {
+    padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
+    font-size: 13px;
 }
 
 .taskList__buttonSpan {
@@ -53,6 +55,12 @@
 }
 
 .taskList__button--remove {
+    padding: 5px;
     background-color: #f0283e;
     color: white;
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    border: none;
 }

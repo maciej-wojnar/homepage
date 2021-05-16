@@ -76,7 +76,7 @@
                 <span class="taskList__span js-taskContent">
                     ${task.content}
                 </span>
-                <button class="taskList__button taskList__button--remove js-remove">
+                <button class="taskList__button--remove js-remove">
                     🗑
                 </button>            
             </li>
